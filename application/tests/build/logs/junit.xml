@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CodeIgniter Application Test Suite" tests="3" assertions="1" failures="0" errors="2" time="1.825863">
+    <testsuite name="Welcome_test" file="C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php" tests="3" assertions="1" failures="0" errors="2" time="1.825863">
+      <testcase name="test_index" class="Welcome_test" file="C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php" line="13" assertions="0" time="1.749735">
+        <error type="RuntimeException">Welcome_test::test_index&#13;
+RuntimeException: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory on line 54 in file C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php
+&#13;
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:176
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\replacing\core\Common.php:319
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\replacing\core\Common.php:313
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\functions.php:97
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\functions.php:32
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestRequest.php:277
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestRequest.php:160
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:151
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+</error>
+        <system-out>
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9496   13431440  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1429.9497   13431440  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1429.9501   13458032  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1429.9504   13458576  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9496   13431440  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1429.9890   13433360  24. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1429.9892   13433776  25. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.0296   13433256  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.0297   13433256  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.0300   13458056  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.0303   13458600  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.0296   13433256  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.0677   13433392  24. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.0680   13433808  25. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.1040   13449616  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.1041   13449616  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.1043   13474440  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.1045   13474992  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.1040   13449616  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.1408   13449768  24. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.1412   13450192  25. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.1818   13449616  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.1819   13449616  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.1821   13474440  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.1823   13474992  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.1818   13449616  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.2218   13449768  24. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.2220   13450192  25. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.2610   13466000  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.2611   13466000  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.2613   13490824  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.2615   13491376  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1429.9455   13427552  15. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:68
+ 1429.9459   13427688  16. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:0
+ 1429.9463   13427688  17. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1429.9465   13427800  18. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1429.9478   13429128  19. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1429.9480   13429280  20. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1429.9483   13429760  21. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1429.9495   13431392  22. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.2610   13466000  23. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.3034   13466152  24. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.3038   13466576  25. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory
+Filename:    C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php
+Line Number: 54
+
+Backtrace:
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php
+	Line: 54
+	Function: file_put_contents
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php
+	Line: 64
+	Function: log
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 136
+	Function: stream_open
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 136
+	Function: loadClassFile
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 88
+	Function: loadClassFile
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 65
+	Function: loadCIPHPUnitTestClass
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php
+	Line: 68
+	Function: spl_autoload_call
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php
+	Line: 151
+	Function: __get
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php
+	Line: 15
+	Function: request
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php
+	Line: 1062
+	Function: invokeArgs
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php
+	Line: 913
+	Function: runTest
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php
+	Line: 686
+	Function: runBare
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php
+	Line: 868
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php
+	Line: 733
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php
+	Line: 733
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php
+	Line: 517
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php
+	Line: 186
+	Function: doRun
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php
+	Line: 116
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit
+	Line: 52
+	Function: main
+
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3766   13516816  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.3766   13516816  25. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.3769   13544240  26. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.3771   13544784  27. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3766   13516816  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.4139   13518504  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.4141   13518920  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.4518   13534784  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.4519   13534784  25. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.4521   13560648  26. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.4523   13561192  27. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.4518   13534784  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.4911   13534920  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.4913   13535336  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.5268   13534760  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.5270   13534760  25. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.5273   13560648  26. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.5274   13561200  27. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.5268   13534760  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.5652   13551296  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.5654   13551720  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.6089   13551144  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.6091   13551144  25. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.6096   13577032  26. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.6098   13577584  27. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.6089   13551144  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.6499   13551296  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.6501   13551720  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.6872   13551144  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.6873   13551144  25. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::logInvocation() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+ 1430.6875   13577032  26. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+ 1430.6877   13577584  27. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+Warning: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory in C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php on line 54
+
+Call Stack:
+    0.2147     128944   1. {main}() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:0
+    0.2865     465888   2. PHPUnit_TextUI_Command::main() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit:52
+    0.2866     471160   3. PHPUnit_TextUI_Command-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:116
+ 1422.5632   12712112   4. PHPUnit_TextUI_TestRunner-&gt;doRun() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php:186
+ 1425.6376   13167256   5. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php:517
+ 1425.9855   13178296   6. PHPUnit_Framework_TestSuite-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0820   13181472   7. PHPUnit_Framework_TestCase-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php:733
+ 1426.0822   13182520   8. PHPUnit_Framework_TestResult-&gt;run() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:868
+ 1429.1009   13239512   9. PHPUnit_Framework_TestCase-&gt;runBare() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php:686
+ 1429.9450   13426328  10. PHPUnit_Framework_TestCase-&gt;runTest() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:913
+ 1429.9452   13426880  11. ReflectionMethod-&gt;invokeArgs() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13426920  12. Welcome_test-&gt;test_index() C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php:1062
+ 1429.9453   13427048  13. CIPHPUnitTestCase-&gt;request() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:15
+ 1429.9454   13427368  14. CIPHPUnitTestCase-&gt;__get() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:151
+ 1430.3738   13512840  15. CIPHPUnitTestRequest-&gt;__construct() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:68
+ 1430.3739   13513008  16. spl_autoload_call() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:49
+ 1430.3741   13513136  17. CIPHPUnitTestAutoloader-&gt;load() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:0
+ 1430.3744   13513136  18. CIPHPUnitTestAutoloader-&gt;loadCIPHPUnitTestClass() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:65
+ 1430.3745   13513248  19. CIPHPUnitTestAutoloader-&gt;loadClassFile() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:88
+ 1430.3753   13514504  20. Kenjis\MonkeyPatch\IncludeStream-&gt;stream_open() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php:136
+ 1430.3754   13514656  21. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php:64
+ 1430.3756   13515136  22. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.3765   13516768  23. _error_handler() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+ 1430.6872   13551144  24. Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy::get() C:\xampp\htdocs\CodeIgniter-3.1.11\system\core\Common.php:597
+ 1430.7348   13567680  25. Kenjis\MonkeyPatch\MonkeyPatchManager::log() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:128
+ 1430.7350   13568104  26. file_put_contents() C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory
+Filename:    C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php
+Line Number: 54
+
+Backtrace:
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php
+	Line: 54
+	Function: file_put_contents
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\IncludeStream.php
+	Line: 64
+	Function: log
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 136
+	Function: stream_open
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 136
+	Function: loadClassFile
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 88
+	Function: loadClassFile
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestAutoloader.php
+	Line: 65
+	Function: loadCIPHPUnitTestClass
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestRequest.php
+	Line: 49
+	Function: spl_autoload_call
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php
+	Line: 68
+	Function: __construct
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php
+	Line: 151
+	Function: __get
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php
+	Line: 15
+	Function: request
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php
+	Line: 1062
+	Function: invokeArgs
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php
+	Line: 913
+	Function: runTest
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestResult.php
+	Line: 686
+	Function: runBare
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestCase.php
+	Line: 868
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php
+	Line: 733
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\Framework\TestSuite.php
+	Line: 733
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\TestRunner.php
+	Line: 517
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php
+	Line: 186
+	Function: doRun
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\src\TextUI\Command.php
+	Line: 116
+	Function: run
+
+	File: C:\xampp\htdocs\CodeIgniter-3.1.11\vendor\phpunit\phpunit\phpunit
+	Line: 52
+	Function: main
+
+
+</system-out>
+      </testcase>
+      <testcase name="test_method_404" class="Welcome_test" file="C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php" line="19" assertions="0" time="0.026103">
+        <error type="RuntimeException">Welcome_test::test_method_404&#13;
+RuntimeException: file_put_contents(/tmp/monkey-patch-debug.log): failed to open stream: No such file or directory on line 54 in file C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php
+&#13;
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:176
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\MonkeyPatchManager.php:54
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:67
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\patcher\3.x\Patcher\ConstantPatcher\Proxy.php:107
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\replacing\core\Common.php:319
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\replacing\core\Common.php:313
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\functions.php:97
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\functions.php:32
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestRequest.php:277
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestRequest.php:160
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:151
+C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php:21
+</error>
+      </testcase>
+      <testcase name="test_APPPATH" class="Welcome_test" file="C:\xampp\htdocs\CodeIgniter-3.1.11\application\tests\controllers\Welcome_test.php" line="25" assertions="1" time="0.050025"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
